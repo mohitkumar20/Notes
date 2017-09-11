@@ -1,3 +1,4 @@
+----------------------------------Good Problems---------------------------
 Problems:
 sum of all the subarrays
 
@@ -9,13 +10,46 @@ longest palindromic substring(extending from center).
 
 *Given two numbers A and B. find the nth number that is divisible by A or B.
 
+--------------------------------------------------------------------------
 
+
+
+----------------------------linux--------------------------------
 to change terminal configurations, the location of file in xubuntu : ~/.config/xfce4/terminal/terminalrc
 
 to list the open wifi connections : 
 nmcli device wifi
 to connecto to a wifi:
 nmcli device wifi connect <wifiname>
+
+----------------------------linux-----------------------------------
+
+---------------------------git-------------------------------
+
+to remove a commit :
+git reset --hard HEAD~1
+git reset --hard <sha1-commit-id>
+
+
+to undo add command :
+git reset <filename>
+just give git reset to undo for all the files
+
+to track a remote branch:
+git checkout --track <remote branch name> . Example
+if there is a remote branch origin/leetcode, give the command
+
+git checkout --track origin/leetcode.   this command will make a local branch names leetcode
+
+
+to add a remote repo : git remote add <local repo name> <repo address>
+eg: git remote add origin https://github.com/mohitkumar20/Notes.git
+
+
+
+
+----------------------------------------------------------
+
 
 										Microsoft questions
 *Given a tree with nodes having the pointer to their parent. find LCA.
