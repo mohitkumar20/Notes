@@ -1,0 +1,57 @@
+vim
+
+zz 
+L
+Lzz
+M
+H
+zt
+zb
+C-e
+C-y
+C-d
+C-u
+C-f
+C-b
+0
+^
+$
+g_
+w
+W
+b
+B
+ci<noun> : change inner <noun> : example : ciw : change inner word : diw : delete inner word : ci' : change inner '
+f <character> : find next occurence of <character>(includes the character)
+t<character> : find next occurence of <character> (till the character. doesnt include it)
+
+cfa : change till next occurence of a(including a)
+tfa : change till next occurence of a (till a not including it.
+F <character> : find previous occurence of <character>(including the character)
+T<character> : find the previous occurence of <character>/till the character,not including it/
+
+"+y<motion> : yanks to the global buffer , + is global buffer(this command can be used to copy paste between files.
+"+P : pastes from the global buffer.
+
+
+CTRL-G : shows the info about the file.
+/ -> for searching
+? -> for reverse searching
+
+
+Substitute
+:s/<old>/<new> , changes the first occurence of <old> to <new> in the CURRENT LINE
+:s/<old>/<new> /g , change the all occurence of <old> to <new> in the CURRENT LINE
+:s/<old>/<new>/gc . change the all occurence of <old> to <new> in the CURRENT LINE with the prompt for each occurence whether to delete or not
+
+use %s instead of s to make the same type of commands but for the WHOLE FILE instead of the CURRENT LINE.
+
+
+:r <filename > -> will write the contents of the file <filename> to the current cursor position.
+
+VIMRUNTIME -> /usr/share/vim/vim74
+
+:let mapleader = "-" => sets the mapleader to -
+
+
+

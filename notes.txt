@@ -1,0 +1,30 @@
+Problems:
+sum of all the subarrays
+
+longest palindromic substring(extending from center). 
+
+*Remove Boxes(leetcode)
+
+*painter's partition problem
+
+*Given two numbers A and B. find the nth number that is divisible by A or B.
+
+
+to change terminal configurations, the location of file in xubuntu : ~/.config/xfce4/terminal/terminalrc
+
+to list the open wifi connections : 
+nmcli device wifi
+to connecto to a wifi:
+nmcli device wifi connect <wifiname>
+
+										Microsoft questions
+*Given a tree with nodes having the pointer to their parent. find LCA.
+*give a linked list with next and a random pointer, clone it.
+	(NOTE: if the nodes in the linkedlist have 2 pointers, first try to modify the secondary pointers in the original linked list).
+
+*spiral matrix print.
+
+*decimal to binary.
+Most significant digit is at the top of the stack.
+
+
