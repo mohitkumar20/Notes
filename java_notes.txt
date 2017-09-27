@@ -38,3 +38,5 @@ Note that it is generally necessary to override the hashCode method whenever thi
 ----------------------------------------------Object class------------------------------------
 
 HotSpot is the Sun's(now Oracle's ) implementation of JVM
+
+http://docs.oracle.com/javase/specs/jls/se7/html/jls-12.html#jls-12.3
