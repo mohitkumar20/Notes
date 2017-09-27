@@ -10,7 +10,7 @@ longest palindromic substring(extending from center).
 
 *Given two numbers A and B. find the nth number that is divisible by A or B.
 
-*median in a stream.
+*generate powerset without duplicate sets(use sets instead of arrays for storing subsets)
 
 --------------------------------------------------------------------------
 
