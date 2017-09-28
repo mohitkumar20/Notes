@@ -40,3 +40,13 @@ Note that it is generally necessary to override the hashCode method whenever thi
 HotSpot is the Sun's(now Oracle's ) implementation of JVM
 
 http://docs.oracle.com/javase/specs/jls/se7/html/jls-12.html#jls-12.3
+
+--------------------------------------------JVM(loading,linking and initializing)-------------------------
+
+
+Array classes are not loaded by class loaders, they are created by JVM directly.
+
+Loading refers to finding the .class file of a class or interface with particulate name and creating an on ojbect of
+class Class to represent that class or interface.
+
+https://www.artima.com/insidejvm/ed2/jvm5.html

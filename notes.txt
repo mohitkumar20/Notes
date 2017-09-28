@@ -12,6 +12,9 @@ longest palindromic substring(extending from center).
 
 *generate powerset without duplicate sets(use sets instead of arrays for storing subsets)
 
+*sliding window maximum(use deque)
+
+*next permutation
 --------------------------------------------------------------------------
 
 
