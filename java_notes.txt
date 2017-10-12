@@ -62,7 +62,9 @@ in the main memory is called visibility problem.
 
 volatile : declaring a variable as volatile, its updated value will be directly written to the main memory.
 
-When a thread writes to a volatile variable, then not just the volatile variable itself is written to main memory. Also all other variables changed by the thread before writing to the volatile variable are also flushed to main memory. When a thread reads a volatile variable it will also read all other variables from main memory which were flushed to main memory together with the volatile variable.
+When a thread writes to a volatile variable, then not just the volatile variable itself is written to main memory. Also all other variables changed 
+by the thread before writing to the volatile variable are also flushed to main memory. When a thread reads a volatile variable it will also read all 
+other variables from main memory which were flushed to main memory together with the volatile variable.
 
 Look at this example:
 
@@ -99,3 +101,55 @@ resource without holding another resource, deadlock will not happen.
 
 --------------------------------multithreading-----------------------------------------
 
+Default access is more restrictive. When a derived class overrides a base class function, more restrictive access can’t
+be given to the overridden function.
+
+
+In case of method overloading, the most specific method is chosen at compile time. As ‘java.lang.String’ is a more specific type than 
+‘java.lang.Object’. In this case the method which takes ‘String’ as a parameter is choosen
+
+
+// Main.java
+public class Main
+{
+    public static void gfg(String s)
+    {    
+        System.out.println("String");
+    }
+    public static void gfg(Object o)
+    {
+        System.out.println("Object");
+    }
+    public static void gfg(Integer i)
+    {
+        System.out.println("Integer");
+    }
+ 
+    public static void main(String args[])
+    {
+        gfg(null);
+    }
+} //end class
+Output:
+
+Compile Error at line 19.
+Explanation: In this case of method Overloading, the most specific method is choosen at compile time.
+As ‘java.lang.String’ and ‘java.lang.Integer’ is a more specific type than ‘java.lang.Object’,but 
+between ‘java.lang.String’ and ‘java.lang.Integer’ none is more specific.
+In this case the Java is unable to decide which method to call
+
+
+int x = 6;
+long y = 9;
+
+x += y;//this will not give CT error. the result will be casted to int.
+x = y;//this will give CT error.
+
+
+Thread cannot be started twice.
+
+
+String s = "Mohit";
+String t = "Mohit"; // s and t will give s == t as true;
+String z = new String("Mohit");//s and z will give false;
+System.out.println(s == z)
