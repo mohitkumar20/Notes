@@ -67,3 +67,18 @@ eg: git remote add origin https://github.com/mohitkumar20/Notes.git
 Most significant digit is at the top of the stack.
 
 
+------------------------------------------------Design Patterns--------------------------------------------
+
+DESIGN PRINCIPLES : 
+1) Identify the aspects of your application that vary and separate them from what stays the same. 
+2) Program to an interface(Program to a super type) and not implementation.
+3) favour composition over inheritance.
+4) Strive for loosely coupled designs between objects that interact.
+
+
+
+Design Patterns:
+1) Strategy : This design pattern defines a family of algorithms,encapsulate them and make them interchangeable.
+2) Observer : This design pattern defines a one-to-many dependency betwen objects so that when one object changes state,
+              all od its dependents are notified and updated automatically.
+
